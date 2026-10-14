@@ -41,6 +41,9 @@ def main():
 
                 print("\nCAESAR CIPHER CRACK RESULTS\n")
 
+                best_shift, best_guess = results[0]
+                print(f"Best guess (shift {best_shift}): \033[32m{best_guess}\033[0m\n")
+
                 for shift, decrypted in results:
                     print(f"Shift {shift:2}: {decrypted}")
 
